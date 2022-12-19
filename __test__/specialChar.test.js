@@ -5,14 +5,14 @@ test('character', () => {
 })
 
 test('character', () => {
-    expect(character('te/st@')).toBe(false)
+    expect(character('te/s-t@')).toBe(false)
 })
 
 test('character', () => {
-    expect(character('Te-st')).toBe(true)
+    expect(character('Te_st')).toBe(true)
 })
 test('character', () => {
-    expect(character('te_St')).toBe(true)
+    expect(character('te.St')).toBe(true)
 })
 
 test('character', () => {
