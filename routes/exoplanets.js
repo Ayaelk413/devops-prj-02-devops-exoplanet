@@ -11,11 +11,14 @@ router.get("/", (req, res, next) => {
 /* POST add exoplanet. */
 router.post("/add", (req, res, next) => {
   console.log("POST ADD EXOPLANET");
+  const ok = uppercase(req.body.uniqueNameExoplanet);
+if(ok){
   Exoplanet.save({
     uniqueName: req.body.uniqueNameExoplanet,
     hClass: req.body.hClassExoplanet,
     discoveryYear: req.body.discoveryYearExoplanet
   });
+};
   res.redirect("/exoplanets");
 });
 
