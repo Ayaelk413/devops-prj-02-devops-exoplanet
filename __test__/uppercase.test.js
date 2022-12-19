@@ -1,4 +1,3 @@
-
 const { uppercase } = require('../utils/utils')
 
 test('uppercase', () => {
