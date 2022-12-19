@@ -1,9 +1,8 @@
 name: Exoplanets CI
 
 on:
-    [push]
-    #pull_request:
-    #branches: [ main ]
+    pull_request:
+    branches: [ main ]
 
 jobs:
     check_code:
@@ -17,3 +16,5 @@ jobs:
             - run: npm run lint
             - run: npm test
             - run: npm run prettier
+
+#todo ...
