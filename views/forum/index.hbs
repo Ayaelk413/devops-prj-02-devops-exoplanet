@@ -5,28 +5,26 @@
             <th>Message</th><th>Auteur</th>
         </tr>
         {{#each messagesTable}}
-        <tr>
-            <td>{{this.message}} </td> <td>{{this.author}} </td> 
-        </tr>
+            <tr>
+                <td>{{this.message}} </td>
+                <td>{{this.author}} </td>
+            </tr>
         {{/each}}
     </table>
 </section>
 <section>
     <h1>Laissez un message</h1>
-    <form method="post" action="/forum/add">
+    <form method='post' action='/forum/add'>
         <div>
             <label> Message : </label>
-            <textarea name="message"></textarea>
+            <textarea name='message'></textarea>
         </div>
         <div>
             <label>Auteur : </label>
-            <input type="text" name="author">
+            <input type='text' name='author' />
         </div>
         <div>
-            <input type="submit">
+            <input type='submit' />
         </div>
     </form>
 </section>
-
-
-
