@@ -5,7 +5,10 @@
     "scripts": {
         "start": "node app.js",
         "prettier": "prettier --check .",
-        "prettier:fix": "prettier --write ."
+        "prettier:fix": "prettier --write .",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "code:fix": "prettier --write . && eslint --fix . "
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
@@ -16,6 +19,11 @@
         "morgan": "~1.9.1"
     },
     "devDependencies": {
+        "eslint": "^8.30.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.6.0",
+        "eslint-plugin-promise": "^6.1.1",
         "nodemon": "^2.0.15",
         "prettier": "2.8.1"
     }
