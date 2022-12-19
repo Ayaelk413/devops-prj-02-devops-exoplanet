@@ -14,6 +14,11 @@ test('uppercase', () => {
 test('uppercase', () => {
     expect(uppercase('teST')).toBe(false)
 })
+
+test('uppercase', () => {
+  expect(uppercase('')).toBe(false)
+})
+
 /* describe('test suite utils', () => {
   it('false checkUniqueName', () => {
     expect(checkUnqiueName('test++++')).toBe(false)
