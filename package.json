@@ -4,8 +4,8 @@
     "private": true,
     "scripts": {
         "start": "node app.js",
-        "prettier": "prettier --check .",
-        "prettier:fix": "prettier --write .",
+        "prettier": "prettier -c \"src/**/*.js\"",
+        "prettier:fix": "prettier -w \"src/**/*.js\"",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "code:fix": "prettier --write . && eslint --fix . ",
