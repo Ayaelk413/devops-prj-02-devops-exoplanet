@@ -1,4 +1,4 @@
-const { uppercase } = require('../utils/utils')
+const { uppercase } = require('../utils/uppercase')
 
 test('uppercase', () => {
     expect(uppercase('test')).toBe(false)
