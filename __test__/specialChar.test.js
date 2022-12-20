@@ -1,4 +1,4 @@
-const { character } = require('../utils/utils')
+const { character } = require('../utils/character')
 
 test('character', () => {
     expect(character('test')).toBe(true)
