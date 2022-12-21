@@ -4,11 +4,14 @@ describe('app tests - uppercase', () => {
     test('should return true as there are only uppercase characters', () => {
         expect(uppercase('TRAPPISTE')).toBe(true)
     })
+
+    test('should return false as there is a lowercase character', () => {
+        expect(uppercase('TRAPPiSTE')).toBe(false)
+    })
+
 })
 
-// test('uppercase', () => {
-//     expect(uppercase('TEST')).toBe(true)
-// })
+
 
 // test('uppercase', () => {
 //     expect(uppercase('Test')).toBe(false)
