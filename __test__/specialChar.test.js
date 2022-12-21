@@ -1,22 +1,21 @@
-const { character } = require('../utils/character')
+const { character } = require('../utils/character');
 
-test('character', () => {
-    expect(character('test')).toBe(true)
-})
-
-test('character', () => {
-    expect(character('te/s-t@')).toBe(false)
-})
-
-test('character', () => {
-    expect(character('Te_st')).toBe(true)
-})
-test('character', () => {
-    expect(character('te.St')).toBe(true)
-})
-
-test('character', () => {
-    expect(character('')).toBe(false)
-})
-
-
+describe("app tests chars - character", () => {
+    test('should return true as the character is correct', () => {
+        expect(character('test')).toBe(true);
+    });
+    test('should return false as there is special character', () => {
+        expect(character('te/s-t@')).toBe(false);
+    });
+    
+    test('should return true as the special character _ is accepted', () => {
+        expect(character('Te_st')).toBe(true);
+    });
+    test('should return true as the special character . is accepted', () => {
+        expect(character('te.St')).toBe(true);
+    });
+    
+    test('should return false as the parameter is empty', () => {
+        expect(character('')).toBe(false);
+    });
+});
