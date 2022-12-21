@@ -1,6 +1,7 @@
 const { uppercase } = require('../utils/uppercase')
 
 describe('app tests - uppercase', () => {
+    
     test('should return true as there are only uppercase characters', () => {
         expect(uppercase('TRAPPISTE')).toBe(true)
     })
@@ -22,19 +23,3 @@ describe('app tests - uppercase', () => {
     })
 
 })
-
-
-
-
-// test('uppercase', () => {
-//     expect(uppercase('teST')).toBe(false)
-// })
-
-// test('uppercase', () => {
-//   expect(uppercase('')).toBe(false)
-// })
-
-// /* describe('test suite utils', () => {
-//   it('false checkUniqueName', () => {
-//     expect(checkUnqiueName('test++++')).toBe(false)
-//   })
