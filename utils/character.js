@@ -1,6 +1,6 @@
 module.exports.character = (uniqueName) => {
     if(!uniqueName) return false;
-    const regex = /[a-z]{1,}|[[_@*+!`'" ?^${}()|[\]\\]/g;
+    const regex = /[a-z]{1,}|[[_@*+!`'" ?^${}§:;,#~&²=€£%()|[\]/\\]/g;
     const found = uniqueName.match(regex);
     return !found;
 }

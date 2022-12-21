@@ -22,8 +22,6 @@ router.post("/add", (req, res, next) => {
       hClass: req.body.hClassExoplanet,
       discoveryYear: req.body.discoveryYearExoplanet
     });
-  }else{
-    console.log("nope");
   }
   res.redirect("/exoplanets");
 });
