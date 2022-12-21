@@ -12,7 +12,7 @@
         "test": "jest",
         "test:coverage": "jest --coverage",
         "test:watch": "jest --watchAll",
-        "commit":"cz"
+        "commit": "cz"
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
