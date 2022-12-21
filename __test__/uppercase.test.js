@@ -1,7 +1,7 @@
 const { uppercase } = require('../utils/uppercase')
 
 describe('app tests - uppercase', () => {
-    test('should return true as there is a word in capital letter', () => {
+    test('should return true as there are only uppercase characters', () => {
         expect(uppercase('TRAPPISTE')).toBe(true)
     })
 })
