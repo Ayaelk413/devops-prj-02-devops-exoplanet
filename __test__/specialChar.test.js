@@ -5,11 +5,11 @@ describe("app tests chars - character", () => {
         expect(character('test')).toBe(true);
     });
     test('should return false as there is special character', () => {
-        expect(character('te/s-t@')).toBe(false);
+        expect(character('te/st@')).toBe(false);
     });
     
     test('should return true as the special character _ is accepted', () => {
-        expect(character('Te_st')).toBe(true);
+        expect(character('Te-st')).toBe(true);
     });
     test('should return true as the special character . is accepted', () => {
         expect(character('te.St')).toBe(true);
