@@ -9,13 +9,15 @@ describe('app tests - uppercase', () => {
         expect(uppercase('TRAPPiSTE')).toBe(false)
     })
 
+    test('should return false as there are multiple lowercase characters', () => {
+    expect(uppercase('Test')).toBe(false)
+    })
+
 })
 
 
 
-// test('uppercase', () => {
-//     expect(uppercase('Test')).toBe(false)
-// })
+
 // test('uppercase', () => {
 //     expect(uppercase('teST')).toBe(false)
 // })
