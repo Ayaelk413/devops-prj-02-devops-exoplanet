@@ -2,8 +2,13 @@ const { character } = require('../utils/character');
 
 describe("app tests chars - character", () => {
     test('should return true as the character is correct', () => {
-        expect(character('TRAPPISTE01-00')).toBe(true);
+        expect(character('TRAPPISTE01')).toBe(true);
     });
+
+    test('should return false as there is one character in small caps', () => {
+        expect(character('TRAPPIsTE01')).toBe(false);
+    });
+
     test('should return false as there is special character', () => {
         expect(character('TRAPPISTE@****01/.[]{}/\()?!-`\' "')).toBe(false);
     });
