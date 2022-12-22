@@ -29,7 +29,11 @@ router.post('/add', (req, res, next) => {
                 '- Error ! There is a special character entered, only - and . are accepted !'
         }
         if (!isUpperCase) {
-            error = '- The characters must be in capital letters, '
+            error = '- Error ! The characters must be in capital letters.'
+        }
+        
+        if(!isSpecialChar && !isUpperCase){
+            error = '- 2 errors ! The characters must be in uppercase and there is a special character not allowed, only . and - are accepted !'
         }
 
         res.render('exoplanets', {
