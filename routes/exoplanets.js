@@ -27,8 +27,7 @@ router.post('/add', (req, res, next) => {
         if (!isSpecialChar) {
             error =
                 '- Error ! There is a special character entered, only - and . are accepted !'
-        }
-        if (!isUpperCase) {
+        }else if (!isUpperCase) {
             error = '- Error ! The characters must be in capital letters.'
         }
         
